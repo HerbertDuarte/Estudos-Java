@@ -3,6 +3,8 @@ package com.example.test.entities;
 import java.io.Serializable;
 import java.util.UUID;
 
+import javax.crypto.EncryptedPrivateKeyInfo;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,7 +22,7 @@ public class UserEntity implements Serializable {
  @GeneratedValue(strategy = GenerationType.AUTO)
  private UUID id;
 
- @Column( nullable = false)
+ @Column(nullable = false)
  private String name;
 
  @Column(unique = true, nullable = false)
@@ -65,6 +67,8 @@ public class UserEntity implements Serializable {
  }
 
  public void setPassword(String password) {
+  
+  
   this.password = password;
  }
 

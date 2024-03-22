@@ -1,0 +1,18 @@
+GET http://localhost:8080/user
+
+###
+
+GET http://localhost:8080/user/eea6be32-4c8f-4295-91bf-cf14535ca37c
+
+###
+
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+ "name": "Celma Duarte",
+ "username": "celmad",
+ "password" : "123123",
+ "email": "celmaduarte@gmail.com"
+}

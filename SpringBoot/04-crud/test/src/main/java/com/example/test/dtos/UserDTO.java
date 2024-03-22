@@ -2,13 +2,12 @@ package com.example.test.dtos;
 
 import com.example.test.entities.UserEntity;
 
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 public class UserDTO extends UserEntity{
 
  @NotBlank private String username;
- @NotBlank @Email private String name;
+ @NotBlank private String name;
  @NotBlank private String email;
  @NotBlank private String password;
  public String getUsername() {
